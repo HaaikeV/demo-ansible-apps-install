@@ -1,9 +1,9 @@
 - name: Connect and Install Application
-  hosts: "{{ the_host }}"
+  hosts: all
   gather_facts: true
   vars:
    ansible_connection: local
-   ansible_python_interpreter: auto
+   ansible_python_interpreter: /usr/bin/python
   tasks:
    - include_role:
        name: apache_install
