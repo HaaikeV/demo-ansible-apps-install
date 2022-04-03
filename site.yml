@@ -1,6 +1,6 @@
-- name: Connect and create environment in AWS
+- name: Connect and Install Application
   hosts: aws_ec2
-  gather_facts: false
+  gather_facts: true
   vars:
    ansible_connection: local
   tasks:
