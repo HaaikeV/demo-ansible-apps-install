@@ -5,7 +5,7 @@
   #  name: httpd
   #  state: latest
   shell: 
-    cmd: dnf install -y httpd
+    cmd: ls -l
 
 - name: latest index.html file is present
   template:
