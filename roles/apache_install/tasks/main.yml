@@ -1,11 +1,11 @@
 ---
 # tasks file for roles/apache_install
 - name: httpd package is present
-  #dnf:
-  #  name: httpd
-  #  state: latest
-  shell: 
-    cmd: ls -l
+  dnf:
+    name: httpd
+    state: latest
+  #shell: 
+  #  cmd: ls -l
 
 - name: latest index.html file is present
   template:
