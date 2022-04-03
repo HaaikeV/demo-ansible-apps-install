@@ -1,0 +1,8 @@
+- name: Connect and create environment in AWS
+  hosts: aws_ec2
+  gather_facts: false
+  vars:
+   ansible_connection: local
+  tasks:
+   - include_role:
+       name: apache_install
