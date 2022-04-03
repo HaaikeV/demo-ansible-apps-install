@@ -1,5 +1,5 @@
 - name: Connect and Install Application
-  hosts: aws_ec2
+  hosts: "{{ the_host }}"
   gather_facts: true
   vars:
    ansible_connection: local
