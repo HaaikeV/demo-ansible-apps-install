@@ -1,7 +1,7 @@
 ---
 # tasks file for roles/apache_install
 - name: httpd package is present
-  yum:
+  dnf:
     name: httpd
     state: latest
 
