@@ -1,8 +1,8 @@
 ---
 # tasks file for roles/apache_install
 - name: httpd package is present
-  dnf:
-    name: httpd
+  yum:
+    name: mysql
     state: latest
   #shell: 
   #  cmd: ls -l
@@ -16,3 +16,4 @@
   service:
     name: httpd
     state: started
+    enabled: true
