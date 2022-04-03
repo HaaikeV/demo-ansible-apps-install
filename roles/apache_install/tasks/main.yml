@@ -4,8 +4,6 @@
   yum:
     name: mysql
     state: latest
-  #shell: 
-  #  cmd: ls -l
 
 - name: latest index.html file is present
   template:
