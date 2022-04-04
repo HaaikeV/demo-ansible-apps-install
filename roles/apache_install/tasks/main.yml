@@ -1,8 +1,8 @@
 ---
 # tasks file for roles/apache_install
 - name: httpd package is present
-  yum:
-    name: mysql
+  dnf:
+    name: "{{ rhel_apps }}"
     state: latest
 
 - name: latest index.html file is present
