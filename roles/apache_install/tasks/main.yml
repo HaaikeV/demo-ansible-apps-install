@@ -4,6 +4,7 @@
   dnf:
     name: httpd
     state: latest
+  become: true
 
 #- name: latest index.html file is present
 #  template:
