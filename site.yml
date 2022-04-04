@@ -4,5 +4,8 @@
   vars:
    ansible_connection: local
   tasks:
-   - include_role:
-       name: ../roles/apache_install
+  - name: httpd package is present
+    yum:
+      name: httpd
+      state: latest
+    become: true
