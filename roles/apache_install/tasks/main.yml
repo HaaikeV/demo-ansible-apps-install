@@ -6,13 +6,13 @@
     state: latest
   become: true
 
-#- name: latest index.html file is present
-#  template:
-#    src: files/index.html
-#    dest: /var/www/html/
+- name: latest index.html file is present
+  template:
+    src: files/index.html
+    dest: /var/www/html/
 
-#- name: httpd is started
-#  service:
-#   name: httpd
-#    state: started
-#    enabled: true
+- name: httpd is started
+  service:
+    name: httpd
+    state: started
+    enabled: true
